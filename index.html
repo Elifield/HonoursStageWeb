@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 1920px; height: 1080px;"></canvas>
+    <canvas id="unity-canvas" width="1920" height="1080" tabindex="-1" style="width: 1920px; height: 1080px;"></canvas>
     <script src="./Build/HSWebBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -32,7 +32,6 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        arguments: [],
         dataUrl: "./Build/HSWebBuild.data",
         frameworkUrl: "./Build/HSWebBuild.framework.js",
         codeUrl: "./Build/HSWebBuild.wasm",
